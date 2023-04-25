@@ -1,0 +1,36 @@
+*, 
+*:before, 
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --fs:1em;
+  --white: #ffffff;
+}
+#wrapper {
+  height: 15vh;
+  width: 100%;
+  color: var(--white);
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Ariel, Sans-Serif;
+  font-size: var(--fs);
+}
+#wrapper span {
+  color: gray;
+  text-transform: lowercase;
+}
+.container > img {
+  max-width: 100%;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(4,);
+  grid-gap: 5px;
+  padding: 7px;
+  align-items: center;
+}
